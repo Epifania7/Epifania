@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  background: rgb(245, 204, 169);
+}
+
+h1 {
+  font-size: 50px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 0;
+  background-color: rgba(11, 35, 41, 0.582)
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  margin: 0 15px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 30px;
+}
+
+header {
+  height: calc(100vh - 175px);
+  background: no-repeat center/cover url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1507&q=80");
+}
+
+.header-content {
+  font-weight: bold;
+  max-width: 400px;
+  margin: 95px auto;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+
+header svg:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.cursos {
+  background: white;
+  height: 355px;
+}
+
+.cursos ul {
+  list-style: none;
+  align-items: center;
+}
+
+.cursos .cursos-title {
+  padding: 15px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.cursos .cursos-card {
+  display: flex;
+  max-width: 950px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.cursos .card {
+  margin-top: 25px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursos .card .card-content {
+  height: 180px;
+}
+
+.cursos .card svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.exatas svg:hover {
+  stroke: rgb(53, 53, 184);
+  transform: scale(1.1);
+}
+
+.linguagens svg:hover {
+  stroke: rgb(145, 145, 47);
+  transform: scale(1.1);
+}
+
+.biologicas svg:hover {
+  stroke: green;
+  transform: scale(1.1);
+}
+
+.humanas svg:hover {
+  stroke: purple;
+  transform: scale(1.1);
+}
+
+.cursos .card h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+#map {
+  height: 400px;
+  /*The height is 400 pixels*/
+  width: 100%;
+  /*The width is the width of the web page*/
+}
+
+.contato {
+  padding: 60px 25px;
+  background-color: rgb(245, 204, 169);
+  position: relative;
+}
+
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  background: white;
+  position: absolute;
+  z-index: 99;
+
+  border-radius: 8px;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1 {
+  font-size: 15px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.contato .contato-card ul {
+  list-style: none;
+}
+
+.contato .contato-card li {
+  font-size: .8rem;
+  font-weight: bold;
+  color: grey;
+
+  display: flex;
+  align-items: center;
+}
+
+.contato .contato-card li svg {
+  width: 16px;
+  margin: 10px;
+}
+
+.produtos {
+  background: rgb(245, 204, 169);
+  height: 400px;
+  padding: 15px;
+}
+
+.produtos .produtos-title {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.produtos .produtos-card {
+  display: flex;
+}
+
+.produtos .card {
+  width: 250px;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px 0px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.produtos .card-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 24px 0px 24px 0px;
+}
+
+.produtos .card .card-tag-top {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background: orange;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+}
+
+.produtos .card .card-tag-top p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: white;
+  font-weight: bold;
+}
+
+.produtos2 {
+  background: rgb(245, 204, 169);
+  height: 350px;
+  padding: 0px;
+}
+
+.produtos2 .produtos-card {
+  display: flex;
+}
+
+.produtos2 .card {
+  width: 250px;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px 0px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.produtos2 .card-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 24px 0px 24px 0px;
+}
+
+.produtos2 .card .card-tag-top {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background: orange;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+}
+
+.produtos2 .card .card-tag-top p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: white;
+  font-weight: bold;
+}
+
+.saibamais {
+  background:white;
+  height: 4400px;
+  padding: 15px;
+  margin: auto 220px;
+}
+
+.saibamais .seção .title {
+  text-align: center;
+  width: 100%;
+  margin: 35px auto;
+}
+
+.saibamais .seção p {
+  text-align: center;
+}
+
+.saibamais .seção img {
+  width: 500px;
+  height: 250px;
+  border-radius: 24px;
+  margin: 25px auto;
+}
+
+.saibamais .seção .text {
+  max-width: 700px;
+  margin: auto;
+}
